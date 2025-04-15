@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/vehicle_item"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:orientation="vertical"
+        android:foreground="@drawable/item_outline"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/Image"
+            android:adjustViewBounds="true"
+            android:clipToOutline="true"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:src="@mipmap/default_pro"
+            android:scaleType="centerCrop"
+        android:foreground="@drawable/border" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxWidth="220dp"
+            android:textAlignment="center"
+            android:text="Vehicle Brand and Model"
+            android:maxLines="2"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/address"
+            android:textSize="17sp"
+            android:maxLines="1"
+            android:textColor="@color/teal_200"
+            android:text="Vehicle Address"
+            android:textStyle="italic">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:background="@drawable/login_button"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/view_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textAlignment="gravity"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                >
+            </Button>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:tint="@color/white"
+                android:layout_weight="0"
+                android:src="@android:drawable/ic_menu_view">
+
+            </ImageView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/deleteOption"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:background="@drawable/login_button"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/remove_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remove"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                >
+            </Button>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:outlineSpotShadowColor="@color/black"
+                app:tint="@color/black"
+                android:layout_weight="0"
+                android:src="@android:drawable/ic_delete">
+
+            </ImageView>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

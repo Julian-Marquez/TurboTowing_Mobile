@@ -1,0 +1,27 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="30dp"
+    android:height="30dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Clipboard Background -->
+    <path
+        android:fillColor="#E0E0E0"
+        android:pathData="M6,2h12a2,2 0 0,1 2,2v18a2,2 0 0,1 -2,2H6a2,2 0 0,1 -2,-2V4a2,2 0 0,1 2,-2z" />
+
+    <!-- Clipboard Top -->
+    <path
+        android:fillColor="#B0BEC5"
+        android:pathData="M6,0h12a2,2 0 0,1 2,2v2H4V2a2,2 0 0,1 2,-2z" />
+
+    <!-- Text Lines on Clipboard -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M8,6h8v2H8z" />
+    <path
+        android:fillColor="#000000"
+        android:pathData="M8,9h8v2H8z" />
+    <path
+        android:fillColor="#000000"
+        android:pathData="M8,12h8v2H8z" />
+</vector>
